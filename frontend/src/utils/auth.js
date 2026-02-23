@@ -94,6 +94,4 @@ export const isTokenExpired = (token) => {
  */
 export const logout = () => {
     removeToken();
-    // Optionally redirect to login
-    window.location.href = '/login';
 };
