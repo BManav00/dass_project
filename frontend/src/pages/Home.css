@@ -1,0 +1,124 @@
+.home-container {
+    min-height: 100vh;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Removed House Pseudo-elements */
+
+.home-content {
+    text-align: center;
+    color: white;
+    max-width: 800px;
+    position: relative;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 3rem;
+    border-radius: 30px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 80px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.home-content h1 {
+    font-size: 64px;
+    margin: 0 0 16px 0;
+    font-weight: 900;
+    color: white;
+    letter-spacing: -2px;
+}
+
+.home-subtitle {
+    font-size: 24px;
+    margin: 0 0 40px 0;
+    opacity: 0.7;
+    color: white;
+    font-weight: 400;
+}
+
+.mascot-container {
+    margin: 20px 0 40px 0;
+    height: 350px;
+    /* Increased container height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mascot-image {
+    width: 320px;
+    /* Larger and cuter */
+    height: auto;
+    filter: drop-shadow(0 30px 60px rgba(0, 0, 0, 0.5));
+    /* Deep 3D shadow */
+    animation: bounce 5s ease-in-out infinite;
+    transform-origin: center bottom;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0px) scale(1) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-25px) scale(1.05) rotate(3deg);
+        /* Breathing, floating, and tiling */
+    }
+}
+
+.home-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.home-button {
+    padding: 16px 40px;
+    font-size: 20px;
+    font-weight: 700;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    /* Bouncy transition */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.home-button.primary {
+    background: white;
+    color: black;
+}
+
+.home-button.secondary {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.home-button:hover {
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .home-content h1 {
+        font-size: 36px;
+    }
+
+    .home-button {
+        padding: 12px 30px;
+        font-size: 18px;
+    }
+
+    .mascot-image {
+        width: 220px;
+    }
+}

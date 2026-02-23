@@ -1,0 +1,433 @@
+.browse-container {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 2rem;
+}
+
+.browse-header {
+    max-width: 1400px;
+    margin: 0 auto 2rem auto;
+    color: white;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.browse-header h1 {
+    margin: 0 0 0.5rem 0;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.browse-subtitle {
+    margin: 0;
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+.my-tickets-btn {
+    padding: 12px 24px;
+    background: white;
+    color: #667eea;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.my-tickets-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+    background: #f8f9fa;
+}
+
+.filters-section {
+    max-width: 1400px;
+    margin: 0 auto 2rem auto;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.search-box {
+    margin-bottom: 1.5rem;
+    position: relative;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.search-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-icon {
+    position: absolute;
+    left: 15px;
+    font-size: 1.2rem;
+    color: #666;
+    pointer-events: none;
+}
+
+.search-input {
+    width: 100%;
+    padding: 14px 45px;
+    /* Space for icon and clear btn */
+    border: 2px solid transparent;
+    border-radius: 50px;
+    /* Pill shape */
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    background: white;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.25);
+    transform: translateY(-1px);
+}
+
+.clear-search-btn {
+    position: absolute;
+    right: 15px;
+    background: none;
+    border: none;
+    color: #999;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 0;
+    line-height: 1;
+    transition: color 0.2s;
+}
+
+.clear-search-btn:hover {
+    color: #666;
+}
+
+.filter-controls {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.filter-select {
+    flex: 1;
+    min-width: 150px;
+    padding: 10px 16px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-select:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.events-grid {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 1.5rem;
+}
+
+.event-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.event-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    gap: 1rem;
+}
+
+.event-card-header h3 {
+    margin: 0;
+    color: #333;
+    font-size: 1.3rem;
+    flex: 1;
+}
+
+.event-type-badge {
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.event-type-badge.normal {
+    background: #e3f2fd;
+    color: #1976d2;
+}
+
+.event-type-badge.merch {
+    background: #f3e5f5;
+    color: #7b1fa2;
+}
+
+.event-description {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.event-card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
+    margin-bottom: 0.5rem;
+}
+
+.event-date,
+.event-capacity {
+    font-size: 14px;
+    color: #666;
+}
+
+.price-tag {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.stock-info {
+    margin: 0.75rem 0;
+    padding: 10px 12px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.stock-unlimited {
+    color: #1565c0;
+    background: #e3f2fd;
+    display: block;
+    padding: 8px;
+    border-radius: 6px;
+}
+
+.stock-available {
+    color: #2e7d32;
+    background: #e8f5e9;
+    display: block;
+    padding: 8px;
+    border-radius: 6px;
+}
+
+.stock-out {
+    color: #c62828;
+    background: #ffebee;
+    display: block;
+    padding: 8px;
+    border-radius: 6px;
+}
+
+.event-organizer {
+    font-size: 13px;
+    color: #999;
+    font-style: italic;
+}
+
+.empty-state {
+    max-width: 600px;
+    margin: 4rem auto;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 3rem 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.empty-state h3 {
+    color: white;
+    margin: 0 0 0.5rem 0;
+    font-size: 1.5rem;
+}
+
+.empty-state p {
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0;
+}
+
+.loading {
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+    padding: 4rem 2rem;
+}
+
+.error-message {
+    max-width: 600px;
+    margin: 1rem auto;
+    background: #f44336;
+    color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .browse-container {
+        padding: 1rem;
+    }
+
+    .browse-header h1 {
+        font-size: 2rem;
+    }
+
+    .events-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+    /* Trending Section */
+    .trending-section {
+        max-width: 1400px;
+        margin: 0 auto 3rem auto;
+        color: white;
+    }
+
+    .section-title {
+        margin-bottom: 1.5rem;
+    }
+
+    .section-title h2 {
+        font-size: 2rem;
+        margin: 0;
+    }
+
+    .section-title p {
+        margin: 0.5rem 0 0 0;
+        opacity: 0.8;
+    }
+
+    .trending-grid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 1.5rem;
+    }
+
+    .trending-card {
+        background: rgba(255, 255, 255, 0.95);
+        padding: 1.5rem;
+        border-radius: 12px;
+        color: #333;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 120px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .trending-card:hover {
+        transform: translateY(-5px) scale(1.02);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+        background: white;
+    }
+
+    .trending-tag {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: #ff4d4f;
+        color: white;
+        font-size: 0.7rem;
+        padding: 2px 8px;
+        border-radius: 10px;
+        font-weight: 700;
+    }
+
+    .trending-card h3 {
+        margin: 0 0 0.5rem 0;
+        font-size: 1.1rem;
+        color: #1a1a1a;
+    }
+
+    .trending-card p {
+        margin: 0;
+        font-size: 0.85rem;
+        color: #666;
+        font-style: italic;
+    }
+
+    .checkbox-filter {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: white;
+        font-weight: 500;
+        cursor: pointer;
+        background: rgba(255, 255, 255, 0.1);
+        padding: 8px 16px;
+        border-radius: 8px;
+        transition: background 0.3s;
+    }
+
+    .checkbox-filter:hover {
+        background: rgba(255, 255, 255, 0.2);
+    }
+
+    @media (max-width: 1200px) {
+        .trending-grid {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    @media (max-width: 768px) {
+        .trending-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .filter-controls {
+            flex-direction: column;
+        }
+    }

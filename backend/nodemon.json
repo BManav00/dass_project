@@ -1,0 +1,13 @@
+{
+    "watch": [
+        "."
+    ],
+    "ext": "js,mjs,cjs,json",
+    "ignore": [
+        "node_modules",
+        "backend.log",
+        "*.log",
+        "scripts"
+    ],
+    "exec": "node server.js"
+}
