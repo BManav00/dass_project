@@ -1,9 +1,11 @@
+
 # 🎓 Complete User Guide - Event Management System
-## All Modules (1-7) - Beginner-Friendly Testing Guide
+## All Modules (1-10) - Beginner-Friendly Testing Guide
 
 ---
 
 ## 📚 Table of Contents
+
 1. [What We've Built](#what-weve-built)
 2. [Prerequisites](#prerequisites)
 3. [Initial Setup](#initial-setup)
@@ -14,12 +16,16 @@
 8. [Module 5: Event Registration & Tickets](#module-5-event-registration--tickets)
 9. [Module 6: Dashboards & Participant Management](#module-6-dashboards--participant-management)
 10. [Module 7: Merchandise & Payments](#module-7-merchandise--payments)
-11. [Complete Testing Workflow](#complete-testing-workflow)
-12. [Troubleshooting](#troubleshooting)
+11. [Module 8: Hackathon Teams & QR Scanner](#module-8-hackathon-teams--qr-scanner)
+12. [Module 9: Real-Time Communication](#module-9-real-time-communication)
+13. [Module 10: Anonymous Feedback](#module-10-anonymous-feedback)
+14. [Complete Testing Workflow](#complete-testing-workflow)
+15. [Troubleshooting](#troubleshooting)
 
 ---
 
 ## 🎯 What We've Built
+
 
 You now have a **full-stack Event Management System** with:
 
@@ -52,6 +58,36 @@ You now have a **full-stack Event Management System** with:
 - Event management (edit, delete, publish)
 - Organizer dashboard with event listing
 
+### ✅ **Module 5: Event Registration & Tickets**
+- Participants can browse and register for events
+- Custom registration forms per event
+- Ticket generation with unique IDs and QR codes
+- Capacity management and duplicate registration prevention
+
+### ✅ **Module 6: Dashboards & Participant Management**
+- Dashboards for all roles (admin, organizer, participant)
+- Analytics, ticket cards, tabs (upcoming, past, cancelled)
+- Organizer view of participants and custom answers
+
+### ✅ **Module 7: Merchandise & Payments**
+- Merchandise event type (price, stock, buy now)
+- Stock decrement and out-of-stock prevention
+- Unlimited stock support
+
+### ✅ **Module 8: Hackathon Teams & QR Scanner**
+- Team-based registration for events
+- Team creation/join with invite codes
+- Auto-registration when team is complete
+- QR code tickets and organizer check-in scanner
+
+### ✅ **Module 9: Real-Time Communication**
+- Event discussion forums (live chat)
+- Team chat (private, real-time)
+
+### ✅ **Module 10: Anonymous Feedback**
+- Participants can leave anonymous feedback after check-in
+- Organizers can view ratings and comments for their events
+
 ---
 
 ## 📋 Prerequisites
@@ -62,6 +98,9 @@ Before you start, make sure you have:
 - ✅ A code editor (VS Code recommended)
 - ✅ A web browser (Chrome, Firefox, etc.)
 - ✅ Terminal/Command Prompt access
+
+---
+
 
 ---
 
@@ -1062,6 +1101,9 @@ Here's a complete workflow that tests everything:
 
 ---
 
+
+---
+
 ## 🧪 Testing with Commands (Alternative Method)
 
 If you prefer testing via command line:
@@ -1128,69 +1170,87 @@ python3 test_module4.py
 
 ---
 
+
+---
+
 ## 📊 Summary of All Features
 
+
 ### Module 1: Infrastructure ✅
-- ✅ Backend server running on port 5000
-- ✅ Frontend running on port 5173
-- ✅ MongoDB database connected
-- ✅ User and Event models defined
+- Backend server running on port 5000
+- Frontend running on port 5173
+- MongoDB database connected
+- User and Event models defined
 
 ### Module 2: Authentication ✅
-- ✅ Signup with IIIT email validation
-- ✅ Login with JWT tokens
-- ✅ Password hashing (bcrypt)
-- ✅ Protected routes
-- ✅ Role-based access (Admin, Organizer, Participant)
-- ✅ Auto-redirect based on role
+- Signup with IIIT email validation
+- Login with JWT tokens
+- Password hashing (bcrypt)
+- Protected routes
+- Role-based access (Admin, Organizer, Participant)
+- Auto-redirect based on role
 
 ### Module 3: Admin Features ✅
-- ✅ Admin dashboard
-- ✅ Create organizers with auto-generated passwords
-- ✅ View all organizers
-- ✅ Delete organizers
-- ✅ System statistics
-- ✅ Organizer dashboard
+- Admin dashboard
+- Create organizers with auto-generated passwords
+- View all organizers
+- Delete organizers
+- System statistics
+- Organizer dashboard
 
 ### Module 4: Event Management ✅
-- ✅ Create events with details
-- ✅ Dynamic form builder (add custom questions)
-- ✅ Multiple field types (text, dropdown, radio, checkbox, number, etc.)
-- ✅ Required/optional fields
-- ✅ Draft/Published workflow
-- ✅ Edit draft events
-- ✅ Delete draft events
-- ✅ Publish events (locks them)
-- ✅ Event listing on organizer dashboard
-- ✅ Beautiful, responsive UI
+- Create events with details
+- Dynamic form builder (add custom questions)
+- Multiple field types (text, dropdown, radio, checkbox, number, etc.)
+- Required/optional fields
+- Draft/Published workflow
+- Edit draft events
+- Delete draft events
+- Publish events (locks them)
+- Event listing on organizer dashboard
+- Beautiful, responsive UI
 
 ### Module 5: Event Registration & Tickets ✅
-- ✅ Browse published events
-- ✅ Search and filter events
-- ✅ View event details
-- ✅ Register for events with custom forms
-- ✅ Ticket generation with unique IDs
-- ✅ Duplicate registration prevention
-- ✅ Capacity management
-- ✅ Email notifications (simulated)
+- Browse published events
+- Search and filter events
+- View event details
+- Register for events with custom forms
+- Ticket generation with unique IDs and QR codes
+- Duplicate registration prevention
+- Capacity management
+- Email notifications (simulated)
 
 ### Module 6: Dashboards & Participant Management ✅
-- ✅ Participant dashboard with tabs (Upcoming/Past/Cancelled)
-- ✅ Ticket cards with QR stubs
-- ✅ Countdown timers for events
-- ✅ Organizer participant view
-- ✅ Registration analytics
-- ✅ Participant list with custom answers
-- ✅ Capacity progress bars
+- Participant dashboard with tabs (Upcoming/Past/Cancelled)
+- Ticket cards with QR stubs
+- Countdown timers for events
+- Organizer participant view
+- Registration analytics
+- Participant list with custom answers
+- Capacity progress bars
 
 ### Module 7: Merchandise & Payments ✅
-- ✅ Merchandise event type
-- ✅ Price and stock fields
-- ✅ Atomic stock decrement
-- ✅ Out of stock prevention
-- ✅ "Buy Now" button for merchandise
-- ✅ Price tags and stock counters
-- ✅ Unlimited stock support
+- Merchandise event type
+- Price and stock fields
+- Atomic stock decrement
+- Out of stock prevention
+- "Buy Now" button for merchandise
+- Price tags and stock counters
+- Unlimited stock support
+
+### Module 8: Hackathon Teams & QR Scanner ✅
+- Team-based registration
+- Team creation/join with invite codes
+- Auto-registration when team is complete
+- QR code tickets and organizer check-in scanner
+
+### Module 9: Real-Time Communication ✅
+- Event discussion forums (live chat)
+- Team chat (private, real-time)
+
+### Module 10: Anonymous Feedback ✅
+- Anonymous feedback for checked-in participants
+- Organizer view of ratings and comments
 
 ---
 
